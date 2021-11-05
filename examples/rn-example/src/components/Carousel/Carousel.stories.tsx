@@ -2,7 +2,7 @@ import * as React from "react";
 import { Image, Dimensions, View, StyleSheet } from "react-native";
 import { storiesOf } from "@storybook/react-native";
 import { withKnobs } from "@storybook/addon-knobs";
-import Carousel, { LeftArrow as CarouselLeftArrow, RightArrow as CarouselRightArrow } from "react-native-simple-elements/components/Carousel";
+import Carousel from "react-native-simple-elements/components/Carousel";
 
 storiesOf("Carousel", module)
     .addDecorator(withKnobs)
@@ -19,9 +19,9 @@ storiesOf("Carousel", module)
                     ...StyleSheet.absoluteFillObject,
                 }}
             >
-                <CarouselLeftArrow
+                {/* <CarouselLeftArrow
                     onPress={e => _imageCarouselRef.current?.snapToPrev()}
-                />
+                /> */}
                 <Carousel
                     sliderWidth={sliderWidth}
                     itemWidth={sliderWidth}
@@ -41,9 +41,9 @@ storiesOf("Carousel", module)
                     ref={_imageCarouselRef}
                     loop={true}
                 />
-                <CarouselRightArrow
+                {/* <CarouselRightArrow
                     onPress={e => _imageCarouselRef.current?.snapToNext()}
-                />
+                /> */}
             </View>
         );
     });
