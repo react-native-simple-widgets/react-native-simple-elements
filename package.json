@@ -1,6 +1,6 @@
 {
     "name": "react-native-simple-elements",
-    "version": "1.5.0-develop.14",
+    "version": "1.5.1",
     "description": "",
     "main": "dist/commonjs/index.js",
     "jsnext:main": "dist/module/index.es.js",
