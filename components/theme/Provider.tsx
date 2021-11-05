@@ -15,7 +15,7 @@ type Props = {
     colorSchemeName?: ColorSchemeName;
 };
 
-const Provider = ({ ...props }: Props) => {
+const ThemeProviver = ({ ...props }: Props) => {
     const colorSchemeName =
         (!props.theme && Appearance?.getColorScheme()) || (props.colorSchemeName || "light");
 
@@ -97,4 +97,4 @@ const Provider = ({ ...props }: Props) => {
     );
 };
 
-export default Provider;
+export default ThemeProviver;
