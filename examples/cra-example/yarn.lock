@@ -12182,7 +12182,7 @@ react-native-screens@^2.17.1:
   integrity sha512-r5WZLpmx2hHjC1RgMdPq5YpSU9tEhBpUaZ5M1SUtNIONyiLqQVxabhRCINdebIk4depJiIl7yw2Q85zJyeX6fw==
 
 "react-native-simple-elements@file:../../react-native-simple-elements":
-  version "1.5.0-develop.10"
+  version "1.5.0-develop.15"
   dependencies:
     color "3.1.2"
     react-native-linear-gradient "^2.5.6"
