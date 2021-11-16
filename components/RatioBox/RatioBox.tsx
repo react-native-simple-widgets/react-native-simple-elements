@@ -1,10 +1,6 @@
 import * as React from "react";
-import { StyleProp, ViewStyle } from "react-native";
-import styled from "styled-components/native";
+import { StyleProp, View, ViewStyle } from "react-native";
 import { SUPPORTED_PERCENTAGE_RATIOS } from "./utils";
-
-const Box = styled.View({
-});
 
 type Props = {
     width: number | string,
@@ -25,7 +21,7 @@ const RatioBox = ({
 }: Props) => {
 
     return (
-        <Box
+        <View
             style={[
                 style,
                 {
@@ -35,7 +31,7 @@ const RatioBox = ({
             ]}
         >
             {children}
-        </Box>
+        </View>
     );
 };
 
