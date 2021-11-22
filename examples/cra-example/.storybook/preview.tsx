@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useColorScheme } from 'react-native';
 import { addDecorator } from '@storybook/react';
-import PaperProviver from 'react-native-simple-elements/components/theme/Provider';
+import ThemeProviver from 'react-native-simple-elements/components/theme/Provider';
 import ToastProvider from 'react-native-simple-elements/components/Toast';
 import { Viewport } from 'react-native-simple-elements/components/Container';
 import { createGlobalStyle } from 'styled-components';
@@ -24,13 +24,13 @@ const StoryBookUI = ({ children }) => {
     return (
         <>
             <GlobalStyle />
-            <PaperProviver colorSchemeName={colorScheme}>
+            <ThemeProviver colorSchemeName={colorScheme}>
                 <ToastProvider>
                     <Viewport style={{ height: "100vh" }}>
                         {children}
                     </Viewport>
                 </ToastProvider>
-            </PaperProviver>
+            </ThemeProviver>
         </>
     );
 }

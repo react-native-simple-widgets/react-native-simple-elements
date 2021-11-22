@@ -12,11 +12,9 @@ const defaultProps = {
     size: 24,
 };
 
-const SquareShimmer = (props: Props) => {
-
-    const {
-        size,
-    } = props;
+const SquareShimmer = ({
+    size,
+}: Props) => {
 
     return (
         <ShimmerPlaceHolder

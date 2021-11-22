@@ -22,6 +22,13 @@ const viewportParams = {
     defaultViewport: "responsive",
 };
 
+const iphonelayout = {
+    viewport: {
+        ...viewportParams,
+        defaultViewport: "iphonex",
+    },
+};
+
 const AppbarHeaderExample = () => {
     const [visible, setVisible] = React.useState(false);
     const openMenu = () => setVisible(true);
@@ -51,7 +58,11 @@ const AppbarHeaderExample = () => {
                 visible={visible}
                 onDismiss={closeMenu}
                 anchor={
-                    <AppbarAction icon={MenuIcon} color="white" onPress={openMenu} />
+                    <AppbarAction
+                        icon={MenuIcon}
+                        // color="white"
+                        onPress={openMenu}
+                    />
                 }>
                 <Menu.Item onPress={() => {console.log('Option 1 was pressed')}} title="Option 1" />
                 <Menu.Item onPress={() => {console.log('Option 2 was pressed')}} title="Option 2" />
@@ -88,7 +99,11 @@ const AppbarExample = () => {
                     visible={visible}
                     onDismiss={closeMenu}
                     anchor={
-                        <AppbarAction icon={MenuIcon} color="white" onPress={openMenu} />
+                        <AppbarAction
+                            icon={MenuIcon}
+                            // color="white"
+                            onPress={openMenu}
+                        />
                     }>
                     <Menu.Item onPress={() => {console.log('Option 1 was pressed')}} title="Option 1" />
                     <Menu.Item onPress={() => {console.log('Option 2 was pressed')}} title="Option 2" />

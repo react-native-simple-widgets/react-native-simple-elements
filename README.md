@@ -10,14 +10,14 @@ npm install react-native-simple-elements
 ### Usage
 
 ```js
-import PaperProviver from "react-native-simple-elements/components/theme/Provider";
+import ThemeProviver from "react-native-simple-elements/components/theme/Provider";
 import Button from 'react-native-simple-elements/components/Button';
 
-<PaperProviver>
+<ThemeProviver>
     <Button
         onPress={() => console.log("Hello")}
     >
         Press Me
     </Button>
-</PaperProviver>
+</ThemeProviver>
 ```

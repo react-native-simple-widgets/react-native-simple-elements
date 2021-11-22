@@ -2,7 +2,7 @@ import * as React from "react";
 import { AppRegistry } from "react-native";
 import { getStorybookUI, configure, addDecorator } from "@storybook/react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import PaperProviver from "react-native-simple-elements/components/theme/Provider";
+import ThemeProviver from "react-native-simple-elements/components/theme/Provider";
 import LightTheme from "react-native-simple-elements/components/theme/LightTheme";
 import { loadStories } from "./storyLoader";
 import { Viewport } from "react-native-simple-elements/components/Container";
@@ -11,11 +11,11 @@ import "./rn-addons";
 configure(() => {
     addDecorator((storyFn) => (
         // <LocaleProvider locale={'EN-gb'}>
-        <PaperProviver theme={LightTheme}>
+        <ThemeProviver theme={LightTheme}>
             <Viewport>
                 {storyFn()}
             </Viewport>
-        </PaperProviver>
+        </ThemeProviver>
         // </LocaleProvider>
     ));
 
