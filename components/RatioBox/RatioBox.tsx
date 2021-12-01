@@ -2,7 +2,7 @@ import * as React from "react";
 import { StyleProp, View, ViewStyle } from "react-native";
 import { SUPPORTED_PERCENTAGE_RATIOS } from "./utils";
 
-type Props = {
+export type Props = {
     width: number | string,
     children: React.ReactNode,
     style?: StyleProp<ViewStyle>,
