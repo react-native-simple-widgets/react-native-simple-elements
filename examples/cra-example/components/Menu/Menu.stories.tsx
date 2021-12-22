@@ -24,6 +24,9 @@ const MenuExample = () => {
                 visible={visible}
                 onDismiss={closeMenu}
                 anchor={<Button onPress={openMenu}>Show menu</Button>}
+                containerStyle={{
+                    marginLeft: "8px",
+                }}
             >
                 <Menu.Item onPress={() => { }} title="Item 1" icon={HomeIcon} />
                 <Menu.Item onPress={() => { }} title="Item 2" />

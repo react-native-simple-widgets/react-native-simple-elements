@@ -53,6 +53,7 @@ type Props = {
      * Content of the `Menu`.
      */
     children: React.ReactNode;
+    containerStyle?: StyleProp<ViewStyle>;
     /**
      * Style of menu's inner content.
      */
@@ -347,6 +348,7 @@ class Menu extends React.Component<Props, State> {
         const {
             visible,
             anchor,
+            containerStyle,
             contentStyle,
             style,
             children,
@@ -542,6 +544,8 @@ class Menu extends React.Component<Props, State> {
                     this.anchor = ref;
                 }}
                 collapsable={false}
+                style={containerStyle}
+                testID="MenuContainer"
             >
                 {this.isAnchorCoord() ? null : anchor}
                 {rendered ? (

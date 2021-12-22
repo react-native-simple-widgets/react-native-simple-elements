@@ -29,6 +29,7 @@ const RatioBox = ({
                     paddingTop: ratio,
                 },
             ]}
+            testID="RatioBox"
         >
             {children}
         </View>

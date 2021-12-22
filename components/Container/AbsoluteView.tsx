@@ -17,6 +17,7 @@ const AbsoluteView = ({
                 style,
                 styles.container,
             ]}
+            testID="AbsoluteView"
         >
             {children}
         </View>
